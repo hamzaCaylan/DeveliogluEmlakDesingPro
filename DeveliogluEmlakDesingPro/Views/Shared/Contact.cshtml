@@ -1,0 +1,209 @@
+﻿ @*@using EntityLayer.Concrete
+@model List<Yonetici> *@
+
+<section class="instructor">
+
+    <div class="container">
+
+
+
+        <ul class="instructor-list">
+            
+            <li>
+                <div class="instructor-card">
+
+                    <figure class="card-banner">
+                        <img src="~/images/instructor-1.png" alt="Shaapir Prio">
+                    </figure>
+
+                    <a href="#">
+                        <h3 class="card-title">Shaapir Prio</h3>
+                    </a>
+
+                    <p class="card-subtitle">Assistant Director</p>
+
+                    <p class="card-subtitle">(+90)352 891 07 34</p>
+
+
+                    <ul class="card-social-list">
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-google" role="img" class="md hydrated" aria-label="logo google"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="instructor-card">
+
+                    <figure class="card-banner">
+                        <img src="~/images/instructor-2.png" alt="Sellina">
+                    </figure>
+
+                    <a href="#">
+                        <h3 class="card-title">Sellina</h3>
+                    </a>
+
+                    <p class="card-subtitle">Director</p>
+
+                    <p class="card-subtitle">(+90)352 891 07 34</p>
+
+
+                    <ul class="card-social-list">
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-google" role="img" class="md hydrated" aria-label="logo google"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="instructor-card">
+
+                    <figure class="card-banner">
+                        <img src="~/images/instructor-3.png" alt="John Smith">
+                    </figure>
+
+                    <a href="#">
+                        <h3 class="card-title">John Smith</h3>
+                    </a>
+
+                    <p class="card-subtitle">Assistant Director</p>
+
+                    <p class="card-subtitle">(+90)352 891 07 34</p>
+
+                    <ul class="card-social-list">
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-google" role="img" class="md hydrated" aria-label="logo google"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="card-social-link">
+                                <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+            @*
+             
+             @foreach (var item in Model)
+            {
+                <li>
+                    <div class="instructor-card">
+
+                        <figure class="card-banner">
+                            <img src="~/images/instructor-1.png" alt="">
+                        </figure>
+
+                        <a href="#">
+                            <h3 class="card-title">@item.YoneticiAdi  @item.YoneticiSoyadi</h3>
+                        </a>
+
+                        <p class="card-subtitle">Assistant Director</p>
+                        <h1 class="card-subtitle">@item.YoneticiTel</h1>
+                        <h1 class="card-subtitle">@item.YoneticiMail</h1>
+
+
+                        <ul class="card-social-list">
+
+                            <li>
+                                <a href="#" class="card-social-link">
+                                    <ion-icon name="logo-google" role="img" class="md hydrated" aria-label="logo google"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="card-social-link">
+                                    <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="card-social-link">
+                                    <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="card-social-link">
+                                    <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+
+            }  
+            *@
+        </ul>
+
+
+    </div>
+</section>
+

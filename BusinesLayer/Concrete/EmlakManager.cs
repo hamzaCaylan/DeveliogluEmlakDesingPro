@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Abstract;
+﻿using BusinesLayer.Abstract;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
@@ -9,39 +10,45 @@ using System.Threading.Tasks;
 
 namespace BusinesLayer.Concrete
 {
-	public class EmlakManager : IEmlakDal
-	{
-		IEmlakDal _emlakDal;
+    public class EmlakManager : IEmlakservice
+    {
+        IEmlakDal _emlakDal;
 
-		public EmlakManager(IEmlakDal emlakDal)
-		{
-			_emlakDal = emlakDal;
-		}		
-		
+        public EmlakManager(IEmlakDal emlakDal)
+        {
+            _emlakDal = emlakDal;
+        }
 
-		public void Delete(Emlak t)
-		{
-			_emlakDal.Delete(t);
-		}
+        public void EmlakAdd(Emlak emlak)
+        {
+            _emlakDal.Insert(emlak);
+        }
 
-		public Emlak GetByID(int id)
-		{
-			return _emlakDal.GetByID(id);
-		}
+        public void EmlakDelete(Emlak emlak)
+        {
+            _emlakDal.Delete(emlak);
+        }
 
-		public List<Emlak> GetListAll()
-		{
-			return _emlakDal.GetListAll();
-		}
+        public void EmlakUpdate(Emlak emlak)
+        {
+            _emlakDal.Update(emlak);
+        }
+        public List<Emlak> GetListWithEmlakTips()
+        {
+            return _emlakDal.getListEmlakTips();
+        }
 
-		public void Insert(Emlak t)
-		{
-			_emlakDal.Insert(t);
-		}
+        public Emlak GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
 
-		public void Update(Emlak t)
-		{
-			_emlakDal.Update(t);
-		}
-	}
+        public List<Emlak> GetList()
+        {
+            throw new NotImplementedException();
+
+        }
+
+
+    }
 }

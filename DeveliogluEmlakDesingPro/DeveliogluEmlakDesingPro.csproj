@@ -1,10 +1,67 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\add-to-cart.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\anti-spam.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\browser-check.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\cart-fragments.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\client" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\comment-reply.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\common.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\core.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\css" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\custom-marker.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\google-map.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\gsap.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\gtm.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\hoverIntent.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\index%281%29.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\index.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\isotope.pkgd.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\jquery-migrate.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\jquery.blockUI.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\jquery.magnific-popup.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\jquery.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\jquery.parallax-scroll.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\js" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\js.cookie.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\logo-mobile.svg" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\logo.svg" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\main.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\main.min%281%29.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\main.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\markerclusterer.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\matterport-logo.svg" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\modernizr.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\newhome-core.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\newhome-membership.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\nouislider.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\packery-mode.pkgd.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\rbt-modules.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\rbtools.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\rs6.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\sdk%281%29.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\sdk.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\select2.full.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\showcase.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\snippet.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\swiper.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\tabs.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\three.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\underscore.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\util.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\woocommerce.min.js.indir" />
+    <None Include="wwwroot\css\Mountain Cabin – NewHome_files\wp-emoji-release.min.js.indir" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
@@ -17,6 +74,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>

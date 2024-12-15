@@ -1,0 +1,173 @@
+﻿@using EntityLayer.Concrete
+@model List<Emlak>
+
+
+<div class="qodef-grid-item qodef-page-content-section qodef-col--content">
+	<article class="qodef-property-item qodef-m post-2459 property type-property status-publish has-post-thumbnail hentry property-type-for-rent property-category-villas property-location-brooklyn property-tag-swimming-pool">
+		<div class="qodef-m-inner">
+			<section class="qodef-m-heading">
+				<div class="qodef-m-heading-top">
+					<div class="qodef-m-types ">
+					</div>
+				</div>
+				<h2 class="qodef-m-heading-title">AdRealEstateHeader</h2>
+				
+				<div class="qodef-m-price-actions qodef--touch">
+					<div class="qodef-m-price">
+						<h5 class="qodef-m-price-title">
+							Fiyatt:
+						</h5>
+						
+						<div class="qodef-m-price-content">
+							
+							<span class="qodef-m-price-amount qodef-h5">
+								12345 ₺"
+							</span>
+							
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<section class="qodef-m-description">
+				<h4 class="qodef-m-description-title">Açıklama</h4>
+				<div class="qodef-m-description-content">
+					<p>
+						Html.DisplayFor(model => model.AdRealEstateAciklama)
+					</p>
+				</div>
+			</section>
+			<section class="qodef-m-features">
+				<h4 class="qodef-m-features-title">Gayrimenkul özellikleri</h4>
+				
+				<div class="qodef-m-features-content">
+					
+					<div class="qodef-m-features-content-inner">
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Bölge:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateBolge)
+							</span>
+						</div>
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+								
+							</span>
+							<span class="qodef-m-features-item-label">
+								Metrekare (m²) :
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateMKare) <span class="qodef--measure-unit">m<sup>2</sup></span>
+							</span>
+						</div>
+						
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Ada no:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateAdaNo)
+							</span>
+						</div>
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Oda:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateOda)
+							</span>
+						</div>
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Parsel:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateParselNo)
+							</span>
+						</div>
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Kat:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateKat)
+							</span>
+						</div>
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								İmar Tipi:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateImarTipi)
+							</span>
+						</div>
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Tapu Durumu:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateTapuDurum)
+							</span>
+						</div>
+
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Emlak Tipi:
+							</span>
+							<span class="qodef-m-features-item-text">
+								Html.DisplayFor(model => model.AdRealEstateEmlakTipi)
+							</span>
+						</div>
+
+
+					</div>
+				</div>
+
+			</section>
+			<section class="qodef-m-video">
+				<h4 class="qodef-m-video-title">Video</h4> <video width="1300" autoplay="" loop="" muted=""
+														  playsinline="">
+					<source src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/property-single-video-1.mp4"
+							type="video/mp4">
+					Your browser does not support the video tag
+				</video>
+			</section>
+
+
+		</div>
+	</article>
+
+</div>

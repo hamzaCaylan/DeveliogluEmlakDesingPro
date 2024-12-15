@@ -9,6 +9,8 @@ namespace DataAccessLayer.Abstract
 {
 	public interface  IEmlakDal:IGenericDal<Emlak>
 	{
-		
-	}
+		//List<Emlak> getListEmlak();
+        List<Emlak> getListEmlakTips();
+       // List<Emlak> getListEmlak();
+    }
 }

@@ -1,0 +1,103 @@
+﻿@*@using EntityLayer.Concrete
+@model List<Emlak> *@
+
+
+<section class="section hero" aria-label="hero">
+    <div class="container">
+
+        <div class="hero-bg">
+            <div class="hero-content">
+                
+                <h1 class="h1 hero-title">
+                    <span class="span">Develioğlu Emlak </span> ile hayallerinizi bulun.
+
+                </h1>
+                
+                <p class="hero-text">
+                    Her kapının sizi gerçekleşen hayallerinize götürdüğü, hikayelerin örüldüğü ve her müşterinin sadece bir mülk değil, gayrimenkulün canlı dokusunda kendi cennet parçasını bulduğu yer.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="hero-form-wrapper">
+            <div class="form-tab">
+
+                <button class="tab-btn active" data-tab-btn>Al</button>
+                <button class="tab-btn" data-tab-btn>Sat</button>
+                <button class="tab-btn" data-tab-btn>Kirala</button>
+
+            </div>
+
+            <form action="" class="hero-form">
+
+                <div class="input-wrapper">
+
+                    <label for="search" class="input-label">Search : *</label>
+
+                    <input type="search" name="search" id="search" placeholder="Search your home" required class="input-field">
+
+                    <ion-icon name="search-outline"></ion-icon>
+
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category" class="input-label">Katagori Seç:</label>
+
+                    <select name="category" id="category" class="dropdown-list">
+
+                        <option value="Ev">Ev</option>
+                        <option value="Daire">Daire</option>
+                        <option value="Ofis">Ofis</option>
+                        <option value="Tarla">Tarla</option>
+
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="min-price" class="input-label">Emalak Danışmanı :</label>
+
+                    <select name="min-price" id="min-price" class="dropdown-list">
+
+                       @*  <option value="Danışmanı">Danışmanı</option>
+                        @foreach (var item in Model)
+                        {
+                            <option value="
+                            @Html.DisplayFor(modelItem => item.AdvisorName)">
+                                @Html.DisplayFor(modelItem => item.AdvisorName)
+                            </option>
+
+
+                        } *@
+
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="max-price" class="input-label">Bölge :</label>
+
+                    <select name="max-price" id="max-price" class="dropdown-list">
+
+                        <option value="Bölge">Bölge</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+
+                        
+
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <a href="/emlak_list.html"></a>
+                    Gayrimenkul Ara
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
