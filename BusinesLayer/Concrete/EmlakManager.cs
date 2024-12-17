@@ -48,7 +48,10 @@ namespace BusinesLayer.Concrete
             throw new NotImplementedException();
 
         }
-
+        public List<Emlak> GetListWithEmlakTips(int id)
+        {
+            return _emlakDal.getListEmlakTips(id);
+        }
 
     }
 }

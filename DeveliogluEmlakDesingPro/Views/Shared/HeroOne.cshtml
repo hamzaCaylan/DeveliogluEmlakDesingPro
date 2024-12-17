@@ -1,5 +1,5 @@
 ﻿@*@using EntityLayer.Concrete
-@model List<Emlak> *@
+@model List<Yonetici> *@
 
 
 <section class="section hero" aria-label="hero">
@@ -23,9 +23,8 @@
         <div class="hero-form-wrapper">
             <div class="form-tab">
 
-                <button class="tab-btn active" data-tab-btn>Al</button>
-                <button class="tab-btn" data-tab-btn>Sat</button>
-                <button class="tab-btn" data-tab-btn>Kirala</button>
+                <button class="tab-btn active" data-tab-btn>Satılık</button>
+                <button class="tab-btn" data-tab-btn>Kiralık</button>
 
             </div>
 
@@ -33,9 +32,9 @@
 
                 <div class="input-wrapper">
 
-                    <label for="search" class="input-label">Search : *</label>
+                    <label for="search" class="input-label"> Başlığa Göre Arayın </label>
 
-                    <input type="search" name="search" id="search" placeholder="Search your home" required class="input-field">
+                    <input type="search" name="search" id="search" placeholder="Başlığa Göre Arayın" required class="input-field">
 
                     <ion-icon name="search-outline"></ion-icon>
 
@@ -59,16 +58,16 @@
 
                     <select name="min-price" id="min-price" class="dropdown-list">
 
-                       @*  <option value="Danışmanı">Danışmanı</option>
+                         <option value="Danışmanı">Danışmanı</option>
                         @foreach (var item in Model)
                         {
-                            <option value="
-                            @Html.DisplayFor(modelItem => item.AdvisorName)">
-                                @Html.DisplayFor(modelItem => item.AdvisorName)
-                            </option>
+                           @* <option value="
+                            @Html.DisplayFor(modelItem => item.YoneticiAdi)">
+                                @Html.DisplayFor(modelItem => item.YoneticiAdi)
+                            </option>*@
 
 
-                        } *@
+                        } 
 
                     </select>
                 </div>

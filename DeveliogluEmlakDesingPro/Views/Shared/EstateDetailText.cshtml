@@ -1,7 +1,7 @@
 ﻿@using EntityLayer.Concrete
 @model List<Emlak>
 
-
+@foreach (var item in Model){
 <div class="qodef-grid-item qodef-page-content-section qodef-col--content">
 	<article class="qodef-property-item qodef-m post-2459 property type-property status-publish has-post-thumbnail hentry property-type-for-rent property-category-villas property-location-brooklyn property-tag-swimming-pool">
 		<div class="qodef-m-inner">
@@ -10,7 +10,7 @@
 					<div class="qodef-m-types ">
 					</div>
 				</div>
-				<h2 class="qodef-m-heading-title">AdRealEstateHeader</h2>
+				<h2 class="qodef-m-heading-title"> </h2>
 				
 				<div class="qodef-m-price-actions qodef--touch">
 					<div class="qodef-m-price">
@@ -29,14 +29,12 @@
 					
 				</div>
 			</section>
-			<section class="qodef-m-description">
-				<h4 class="qodef-m-description-title">Açıklama</h4>
-				<div class="qodef-m-description-content">
-					<p>
-						Html.DisplayFor(model => model.AdRealEstateAciklama)
-					</p>
-				</div>
-			</section>
+				<section class="qodef-m-description">
+					<h4 class="qodef-m-description-title">@item.EmlakName</h4>
+					<div class="qodef-m-description-content">
+						
+					</div>
+				</section>
 			<section class="qodef-m-features">
 				<h4 class="qodef-m-features-title">Gayrimenkul özellikleri</h4>
 				
@@ -52,7 +50,7 @@
 								Bölge:
 							</span>
 							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateBolge)
+									item.Yoneticis.YoneticiSoyadi
 							</span>
 						</div>
 
@@ -64,7 +62,7 @@
 								Metrekare (m²) :
 							</span>
 							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateMKare) <span class="qodef--measure-unit">m<sup>2</sup></span>
+									@item.EmlakMetreKare  <span class="qodef--measure-unit">m<sup>2</sup></span>
 							</span>
 						</div>
 						
@@ -76,7 +74,7 @@
 								Ada no:
 							</span>
 							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateAdaNo)
+								AdaNo)
 							</span>
 						</div>
 
@@ -88,7 +86,7 @@
 								Oda:
 							</span>
 							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateOda)
+								@item.EmlakOda
 							</span>
 						</div>
 
@@ -157,6 +155,14 @@
 				</div>
 
 			</section>
+				<section class="qodef-m-description">
+					<h4 class="qodef-m-description-title">Açıklama</h4>
+					<div class="qodef-m-description-content">
+						<p>
+							@item.EmlakAciklama
+						</p>
+					</div>
+				</section>
 			<section class="qodef-m-video">
 				<h4 class="qodef-m-video-title">Video</h4> <video width="1300" autoplay="" loop="" muted=""
 														  playsinline="">
@@ -165,9 +171,11 @@
 					Your browser does not support the video tag
 				</video>
 			</section>
+			
 
 
 		</div>
 	</article>
 
-</div>
+	</div>
+}

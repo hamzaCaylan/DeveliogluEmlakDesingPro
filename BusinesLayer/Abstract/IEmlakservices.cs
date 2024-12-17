@@ -11,12 +11,12 @@ namespace BusinesLayer.Abstract
     {
         void EmlakAdd(Emlak emlak);
         void EmlakDelete(Emlak emlak);
-        void EmlakUpdate(Emlak emlak);
-
+        void EmlakUpdate(Emlak emlak);  
         
         Emlak GetById(int id);
-
         List<Emlak> GetListWithEmlakTips();
-        List<Emlak> GetList();
-    }
+		List<Emlak> GetList();
+
+
+	}
 }

@@ -1,7 +1,4 @@
 ﻿
-@{
-	Layout = null;
-}
 
 <!DOCTYPE html>
 
@@ -972,7 +969,7 @@
 	<main>
 		<article class="article">
 
-
+			
 			<div id="qodef-page-wrapper" class="">
 
 				<div id="qodef-page-outer">
@@ -1022,9 +1019,13 @@
 									<div class="qodef-grid qodef-layout--template qodef-grid-template--8-4">
 										<div class="qodef-grid-inner">
 
+											
+
 											@await Html.PartialAsync("EstateDetailText")
 
 											@await Html.PartialAsync("DetailTwo")
+
+											@*@await Component.InvokeAsync("EmlakList")*@
 										</div>
 									</div>
 								</div>
