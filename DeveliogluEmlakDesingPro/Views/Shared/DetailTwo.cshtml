@@ -4,24 +4,25 @@
 	Layout = null;
 }
 
+@foreach (var item in Model)
+{
+	<div class="qodef-grid-item qodef-page-sidebar-section qodef-col--sidebar">
+		<div class="qodef-m-price-actions qodef--desktop">
+			<div class="qodef-m-price">
+				<h5 class="qodef-m-price-title">
+					Fiyat:
+				</h5>
+				<div class="qodef-m-price-content">
+					<span class="qodef-m-price-amount qodef-h5">
+						<div class="qodef-m-price-content">
+							<span class="qodef-m-price-amount qodef-h5">
+								₺
+							</span>
 
-<div class="qodef-grid-item qodef-page-sidebar-section qodef-col--sidebar">
-	<div class="qodef-m-price-actions qodef--desktop">
-		<div class="qodef-m-price">
-			<h5 class="qodef-m-price-title">
-				Fiyat:
-			</h5>
-			<div class="qodef-m-price-content">
-				<span class="qodef-m-price-amount qodef-h5">
-					<div class="qodef-m-price-content">
-						<span class="qodef-m-price-amount qodef-h5">
-							 ₺
-						</span>
-
-					</div>
+						</div>
+				</div>
 			</div>
-		</div>
-		@* <div class="qodef-m-actions">
+			@* <div class="qodef-m-actions">
 			<div class="qodef-wishlist qodef-m">
 				<button type="button"
 						class="qodef-m-action-button qodef-property-spinner qodef--allowed-remove qodef-m-link "
@@ -148,62 +149,63 @@
 				<span class="qodef-m-tooltip">Print</span>
 			</button>
 		</div> *@
-	</div>
-	<section class="qodef-m-author">
-		<div class="qodef-m-author-top">
-			<div class="qodef-m-author-image">
-				@*buraya emlakcinin detay sayfasinin urlsi konacak*@
-				<a itemprop="author" href="">
-					
-					<img src="~\images\LOGO.png" alt=""
-						 width="100" height="100" data-ratio="1">
-				</a>
-			</div>
-			<div class="qodef-m-author-heading">
-				<span class="qodef-m-author-heading-agency">
-					@* New Home *@
-				</span>
-				<h4 class="qodef-m-author-heading-name">item.EmlakID)</h4>
-			</div>
 		</div>
-		<div class="qodef-m-author-content">
-			<div class="qodef-m-author-content-item">
-				<span class="qodef-m-author-content-item-label">
-					Office Tel:
-				</span>
-				<a itemprop="tel" class="qodef-m-author-content-item-text" href="tel:+1114445557">
-					+1114445557
-				</a>
+		<section class="qodef-m-author">
+			<div class="qodef-m-author-top">
+				<div class="qodef-m-author-image">
+					@*buraya emlakcinin detay sayfasinin urlsi konacak*@
+					<a itemprop="author" href="">
+
+						<img src="~\images\LOGO.png" alt=""
+						width="100" height="100" data-ratio="1">
+					</a>
+				</div>
+				<div class="qodef-m-author-heading">
+					<span class="qodef-m-author-heading-agency">
+						@* New Home *@
+					</span>
+					<h3 class="qodef-m-author-heading-name">@item.Yoneticis.YoneticiAdi @item.Yoneticis.YoneticiSoyadi</h3>
+				</div>
 			</div>
-			<div class="qodef-m-author-content-item">
-				<span class="qodef-m-author-content-item-label">
-					Mobile Tel:
-				</span>
-				<a itemprop="tel" class="qodef-m-author-content-item-text" href="tel:+7774442225">
-					+7774442225
-				</a>
+			<div class="qodef-m-author-content">
+				<div class="qodef-m-author-content-item">
+					<span class="qodef-m-author-content-item-label">
+						Office Tel:
+					</span>
+					<a itemprop="tel" class="qodef-m-author-content-item-text" href="tel:@item.Yoneticis.YoneticiTel">
+						@item.Yoneticis.YoneticiTel
+					</a>
+				</div>
+				<div class="qodef-m-author-content-item">
+					<span class="qodef-m-author-content-item-label">
+						Mobile Tel:
+					</span>
+					<a itemprop="tel" class="qodef-m-author-content-item-text" href="tel:@item.Yoneticis.YoneticiTel">
+						@item.Yoneticis.YoneticiTel
+					</a>
+				</div>
+				<div class="qodef-m-author-content-item">
+					<span class="qodef-m-author-content-item-label">
+						Whatsapp Tel:
+					</span>
+					<a itemprop="tel" class="qodef-m-author-content-item-text" href="tel:@item.Yoneticis.YoneticiTel">
+						@item.Yoneticis.YoneticiTel
+					</a>
+				</div>
+				<div class="qodef-m-author-content-item">
+					<span class="qodef-m-author-content-item-label">
+						Email:
+					</span>
+					<a itemprop="email" class="qodef-m-author-content-item-text" href="@item.Yoneticis.YoneticiTel">
+						@item.Yoneticis.YoneticiMail
+					</a>
+				</div>
 			</div>
-			<div class="qodef-m-author-content-item">
-				<span class="qodef-m-author-content-item-label">
-					Whatsapp Tel:
-				</span>
-				<a itemprop="tel" class="qodef-m-author-content-item-text" href="tel:7774442225">
-					7774442225
-				</a>
-			</div>
-			<div class="qodef-m-author-content-item">
-				<span class="qodef-m-author-content-item-label">
-					Email:
-				</span>
-				<a itemprop="email" class="qodef-m-author-content-item-text" href="mailto:rachelgray@example.com">
-					rachelgray@example.com
-				</a>
-			</div>
-		</div>
-		@* <a class="qodef-shortcode qodef-m qodef-m-author-link qodef-button qodef-layout--filled qodef-size--normal-full qodef-html--link"
+			@* <a class="qodef-shortcode qodef-m qodef-m-author-link qodef-button qodef-layout--filled qodef-size--normal-full qodef-html--link"
 		   href="https://newhome.qodeinteractive.com/author/rachel-gray/" target="_self">
 			<span class="qodef-m-text">View my properties</span>
 		</a> *@
-	</section>
+		</section>
 
-</div>
+	</div>
+}

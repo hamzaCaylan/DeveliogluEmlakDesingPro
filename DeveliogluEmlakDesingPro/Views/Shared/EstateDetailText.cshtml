@@ -21,7 +21,7 @@
 						<div class="qodef-m-price-content">
 							
 							<span class="qodef-m-price-amount qodef-h5">
-								12345 ₺"
+									 ₺"
 							</span>
 							
 						</div>
@@ -42,6 +42,8 @@
 					
 					<div class="qodef-m-features-content-inner">
 
+						@if (@item.BolgeMahalles.BolgeMahalleName != null)
+						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 
@@ -50,10 +52,20 @@
 								Bölge:
 							</span>
 							<span class="qodef-m-features-item-text">
-									item.Yoneticis.YoneticiSoyadi
+									@item.BolgeMahalles.BolgeMahalleName
 							</span>
 						</div>
-
+						}
+						@if(@item.EmlakTurs.EmlakTurName != null){
+							<div class="qodef-m-features-item qodef--predefined-order">
+								<span class="qodef-m-features-item-icon">
+								</span>
+								<span class="qodef-m-features-item-label">Emlak Tipi:</span>
+								<span class="qodef-m-features-item-text">@item.EmlakTurs.EmlakTurName</span>
+							</div>
+						}
+						@if(@item.EmlakMetreKare != null)
+						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 								
@@ -65,19 +77,9 @@
 									@item.EmlakMetreKare  <span class="qodef--measure-unit">m<sup>2</sup></span>
 							</span>
 						</div>
-						
-						<div class="qodef-m-features-item qodef--predefined-order">
-							<span class="qodef-m-features-item-icon">
-
-							</span>
-							<span class="qodef-m-features-item-label">
-								Ada no:
-							</span>
-							<span class="qodef-m-features-item-text">
-								AdaNo)
-							</span>
-						</div>
-
+						}
+						@if (@item.EmlakOda != null)
+						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 
@@ -89,19 +91,9 @@
 								@item.EmlakOda
 							</span>
 						</div>
-
-						<div class="qodef-m-features-item qodef--predefined-order">
-							<span class="qodef-m-features-item-icon">
-
-							</span>
-							<span class="qodef-m-features-item-label">
-								Parsel:
-							</span>
-							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateParselNo)
-							</span>
-						</div>
-
+						}
+						@if (@item.EmlakKat != null)
+						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 
@@ -110,10 +102,56 @@
 								Kat:
 							</span>
 							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateKat)
+								@item.EmlakKat
 							</span>
 						</div>
+						}
+						@if (@item.EmlakEsya != null)
+						{
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
 
+							</span>
+							<span class="qodef-m-features-item-label">
+								Eşya:
+							</span>
+							<span class="qodef-m-features-item-text">
+							@item.EmlakEsya
+							</span>
+						</div>
+						}
+						
+						@if (@item.EmlakOtopark != null)
+						{
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Otopark:
+							</span>
+							<span class="qodef-m-features-item-text">
+								@item.EmlakOtopark
+							</span>
+						</div>
+						}
+						@if (@item.EmlakAsansor != null)
+						{
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Otopark:
+							</span>
+							<span class="qodef-m-features-item-text">
+								@item.EmlakAsansor
+							</span>
+						</div>
+						}
+						
+						@if (@item.EmlakTurs.EmlakTurName != null)
+						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 
@@ -122,10 +160,12 @@
 								İmar Tipi:
 							</span>
 							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateImarTipi)
+								ImarTipi
 							</span>
 						</div>
-
+						}
+						@if (@item.EmlakTurs.EmlakTurName != null)
+						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 
@@ -134,21 +174,11 @@
 								Tapu Durumu:
 							</span>
 							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateTapuDurum)
+								TapuDurum
 							</span>
 						</div>
-
-						<div class="qodef-m-features-item qodef--predefined-order">
-							<span class="qodef-m-features-item-icon">
-
-							</span>
-							<span class="qodef-m-features-item-label">
-								Emlak Tipi:
-							</span>
-							<span class="qodef-m-features-item-text">
-								Html.DisplayFor(model => model.AdRealEstateEmlakTipi)
-							</span>
-						</div>
+						}
+						
 
 
 					</div>
