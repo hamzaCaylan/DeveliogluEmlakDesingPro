@@ -22,7 +22,9 @@ namespace EntityLayer.Concrete
 
 		public string YoneticiUnvan {  get; set; }
 
-		public List<Emlak> Emlaks { get; set; }
+        public string YoneticiSifre { get; set; }
+
+        public List<Emlak> Emlaks { get; set; }
 
 	}
 }

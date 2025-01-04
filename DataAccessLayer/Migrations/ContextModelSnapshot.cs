@@ -201,6 +201,10 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("YoneticiSifre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("YoneticiSoyadi")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

@@ -15,13 +15,13 @@
 				<div class="qodef-m-price-actions qodef--touch">
 					<div class="qodef-m-price">
 						<h5 class="qodef-m-price-title">
-							Fiyatt:
+							Fiyat:
 						</h5>
 						
 						<div class="qodef-m-price-content">
 							
 							<span class="qodef-m-price-amount qodef-h5">
-									 ₺"
+							@item.Fiyat ₺
 							</span>
 							
 						</div>
@@ -60,7 +60,7 @@
 							<div class="qodef-m-features-item qodef--predefined-order">
 								<span class="qodef-m-features-item-icon">
 								</span>
-								<span class="qodef-m-features-item-label">Emlak Tipi:</span>
+								<span class="qodef-m-features-item-label">Emlak Tür:</span>
 								<span class="qodef-m-features-item-text">@item.EmlakTurs.EmlakTurName</span>
 							</div>
 						}
@@ -142,42 +142,86 @@
 
 							</span>
 							<span class="qodef-m-features-item-label">
-								Otopark:
+							Asansor:
 							</span>
 							<span class="qodef-m-features-item-text">
 								@item.EmlakAsansor
 							</span>
 						</div>
 						}
+						@if (@item.KonutYas != null)
+						{
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Konut yaş:
+							</span>
+							<span class="qodef-m-features-item-text">
+								@item.KonutYas
+							</span>
+						</div>
+						}
 						
-						@if (@item.EmlakTurs.EmlakTurName != null)
+						
+						@if (@item.TapuDurum != null)
 						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 
 							</span>
 							<span class="qodef-m-features-item-label">
-								İmar Tipi:
+							Tapu Durum:
 							</span>
 							<span class="qodef-m-features-item-text">
-								ImarTipi
+								@item.TapuDurum
 							</span>
-						</div>
+						</div>						
 						}
-						@if (@item.EmlakTurs.EmlakTurName != null)
+						@if (@item.EmlakIsitma != null)
 						{
 						<div class="qodef-m-features-item qodef--predefined-order">
 							<span class="qodef-m-features-item-icon">
 
 							</span>
 							<span class="qodef-m-features-item-label">
-								Tapu Durumu:
+							Isıtma şekli:
 							</span>
 							<span class="qodef-m-features-item-text">
-								TapuDurum
+										@item.EmlakIsitma
 							</span>
 						</div>
 						}
+						@if (@item.Cephe != null)
+						{
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+								Cephe:
+							</span>
+							<span class="qodef-m-features-item-text">
+								@item.Cephe
+							</span>
+						</div>
+						}
+						@if (@item.Kredi != null)
+						{
+						<div class="qodef-m-features-item qodef--predefined-order">
+							<span class="qodef-m-features-item-icon">
+
+							</span>
+							<span class="qodef-m-features-item-label">
+							Kredi uygunluk:
+							</span>
+							<span class="qodef-m-features-item-text">
+										@item.Kredi
+							</span>
+						</div>
+						}	
+
 						
 
 

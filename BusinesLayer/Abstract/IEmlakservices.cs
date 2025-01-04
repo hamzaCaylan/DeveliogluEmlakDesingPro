@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinesLayer.Abstract
 {
-    public interface IEmlakservice 
+    public interface IEmlakService 
     {
         void EmlakAdd(Emlak emlak);
         void EmlakDelete(Emlak emlak);

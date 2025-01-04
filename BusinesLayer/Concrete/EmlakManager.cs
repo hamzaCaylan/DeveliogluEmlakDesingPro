@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinesLayer.Concrete
 {
-    public class EmlakManager : IEmlakservice
+    public class EmlakManager : IEmlakService
     {
         IEmlakDal _emlakDal;
 

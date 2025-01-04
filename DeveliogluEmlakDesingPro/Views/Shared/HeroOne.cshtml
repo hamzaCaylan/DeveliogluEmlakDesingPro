@@ -25,12 +25,13 @@
 
                 <button class="tab-btn active" data-tab-btn>Satılık</button>
                 <button class="tab-btn" data-tab-btn>Kiralık</button>
+                <button class="tab-btn " data-tab-btn>Tümü</button>
 
             </div>
 
             <form action="" class="hero-form">
 
-                <div class="input-wrapper">
+                @*<div class="input-wrapper">
 
                     <label for="search" class="input-label"> Başlığa Göre Arayın </label>
 
@@ -38,7 +39,7 @@
 
                     <ion-icon name="search-outline"></ion-icon>
 
-                </div>
+                </div>*@
 
                 <div class="input-wrapper">
                     <label for="category" class="input-label">Katagori Seç:</label>
@@ -52,7 +53,22 @@
 
                     </select>
                 </div>
+                <div class="input-wrapper">
+                    <label for="max-price" class="input-label">Bölge :</label>
 
+                    <select name="max-price" id="max-price" class="dropdown-list">
+
+                        <option value="Bölge">Bölge</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+                        <option value="Bölge1">Bölge1</option>
+
+
+
+                    </select>
+                </div>
                 <div class="input-wrapper">
                     <label for="min-price" class="input-label">Emalak Danışmanı :</label>
 
@@ -72,22 +88,7 @@
                     </select>
                 </div>
 
-                <div class="input-wrapper">
-                    <label for="max-price" class="input-label">Bölge :</label>
-
-                    <select name="max-price" id="max-price" class="dropdown-list">
-
-                        <option value="Bölge">Bölge</option>
-                        <option value="Bölge1">Bölge1</option>
-                        <option value="Bölge1">Bölge1</option>
-                        <option value="Bölge1">Bölge1</option>
-                        <option value="Bölge1">Bölge1</option>
-                        <option value="Bölge1">Bölge1</option>
-
-                        
-
-                    </select>
-                </div>
+                
 
                 <button type="submit" class="btn btn-primary">
                     <a href="/emlak_list.html"></a>

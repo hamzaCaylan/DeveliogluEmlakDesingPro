@@ -8,7 +8,7 @@ namespace DeveliogluEmlakDesingPro.Controllers
 	{
 		EmlakManager em = new EmlakManager(new EfEmlakRepository());
 
-		public IActionResult IlanDetaylari(int id)
+		public IActionResult IlanDetaylar(int id)
 		{
 			var values = em.GetListWithEmlakTips(id);
 			return View(values);
