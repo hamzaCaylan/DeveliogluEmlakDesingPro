@@ -26,7 +26,7 @@ namespace DeveliogluEmlakDesingPro.Controllers
             e.EmlakEsya = "Yok";
 
 
-            em.EmlakAdd(e);
+            em.TAdd(e);
             return RedirectToAction("index", "Home");
 
         }

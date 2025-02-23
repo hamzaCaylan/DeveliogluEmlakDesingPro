@@ -18,21 +18,23 @@ namespace BusinesLayer.Concrete
         {
             _emlakDal = emlakDal;
         }
+        //53.der kalkti
+        //public void EmlakAdd(Emlak emlak)
+        //{
+        //    _emlakDal.Insert(emlak);
+        //}
 
-        public void EmlakAdd(Emlak emlak)
-        {
-            _emlakDal.Insert(emlak);
-        }
+        //public void EmlakDelete(Emlak emlak)
+        //{
+        //    _emlakDal.Delete(emlak);
+        //}
 
-        public void EmlakDelete(Emlak emlak)
-        {
-            _emlakDal.Delete(emlak);
-        }
+        //public void EmlakUpdate(Emlak emlak)
+        //{
+        //    _emlakDal.Update(emlak);
+        //}
 
-        public void EmlakUpdate(Emlak emlak)
-        {
-            _emlakDal.Update(emlak);
-        }
+
         public List<Emlak> GetListWithEmlakTips()
         {
             return _emlakDal.getListEmlakTips();
@@ -40,12 +42,12 @@ namespace BusinesLayer.Concrete
 
         public Emlak GetById(int id)
         {
-            throw new NotImplementedException();
+           return _emlakDal.GetByID(id);
         }
 
         public List<Emlak> GetList()
         {
-            throw new NotImplementedException();
+            return _emlakDal.GetListAll();
 
         }
         public List<Emlak> GetListWithEmlakTips(int id)
@@ -53,5 +55,20 @@ namespace BusinesLayer.Concrete
             return _emlakDal.getListEmlakTips(id);
         }
 
+
+        public void TAdd(Emlak t)
+        {
+            _emlakDal.Insert(t);
+        }
+
+        public void TDelete(Emlak t)
+        {
+            _emlakDal.Delete(t);
+        }
+
+        public void TUpdate(Emlak t)
+        {
+            _emlakDal.Update(t);
+        }
     }
 }

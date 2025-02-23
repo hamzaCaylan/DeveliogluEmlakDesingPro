@@ -2,7 +2,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+// Add authentication with a default scheme
+builder.Services.AddAuthentication("YourDefaultScheme")
+    .AddCookie("YourDefaultScheme", options =>
+    {
+        // Configure cookie authentication options
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -16,6 +21,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseAuthentication();
 app.UseRouting();
 
 app.UseAuthorization();

@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace BusinesLayer.Abstract
 {
-    public interface IEmlakService 
+    public interface IEmlakService : IGernericServices<Emlak>
     {
-        void EmlakAdd(Emlak emlak);
-        void EmlakDelete(Emlak emlak);
-        void EmlakUpdate(Emlak emlak);  
+        //53.ders kalkti
+  //      void EmlakAdd(Emlak emlak);
+  //      void EmlakDelete(Emlak emlak);
+  //      void EmlakUpdate(Emlak emlak);  
         
-        Emlak GetById(int id);
-        List<Emlak> GetListWithEmlakTips();
-		List<Emlak> GetList();
+  //      Emlak GetById(int id);
+  //      List<Emlak> GetListWithEmlakTips();
+		//List<Emlak> GetList();
 
 
 	}

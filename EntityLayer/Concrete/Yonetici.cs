@@ -12,19 +12,19 @@ namespace EntityLayer.Concrete
 		[Key]
 		public int YoneticiID { get; set; }
 
-		public string YoneticiAdi { get; set; }
+        public string? YoneticiAdi { get; set; }
 
-		public string YoneticiSoyadi {  get; set; }
+		public string? YoneticiSoyadi {  get; set; }
 
 		public int YoneticiTel {  get; set; }
 
-		public string YoneticiMail {  get; set; }
+		public string? YoneticiMail {  get; set; }
 
-		public string YoneticiUnvan {  get; set; }
+		public string? YoneticiUnvan {  get; set; }
 
-        public string YoneticiSifre { get; set; }
+        public string? YoneticiSifre { get; set; }
 
-        public List<Emlak> Emlaks { get; set; }
+        public List<Emlak>? Emlaks { get; set; }
 
 	}
 }
