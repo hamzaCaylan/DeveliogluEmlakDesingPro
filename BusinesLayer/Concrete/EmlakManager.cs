@@ -18,22 +18,20 @@ namespace BusinesLayer.Concrete
         {
             _emlakDal = emlakDal;
         }
-        //53.der kalkti
-        //public void EmlakAdd(Emlak emlak)
-        //{
-        //    _emlakDal.Insert(emlak);
-        //}
+        public void TAdd(Emlak t)
+        {
+            _emlakDal.Insert(t);
+        }
 
-        //public void EmlakDelete(Emlak emlak)
-        //{
-        //    _emlakDal.Delete(emlak);
-        //}
+        public void TDelete(Emlak t)
+        {
+            _emlakDal.Delete(t);
+        }
 
-        //public void EmlakUpdate(Emlak emlak)
-        //{
-        //    _emlakDal.Update(emlak);
-        //}
-
+        public void TUpdate(Emlak t)
+        {
+            _emlakDal.Update(t);
+        }
 
         public List<Emlak> GetListWithEmlakTips()
         {
@@ -55,20 +53,33 @@ namespace BusinesLayer.Concrete
             return _emlakDal.getListEmlakTips(id);
         }
 
-
-        public void TAdd(Emlak t)
+        public List<Emlak> GetEmlakListByYonetici(int id)
         {
-            _emlakDal.Insert(t);
+            return _emlakDal.GetListAll(x=>x.YoneticiID==id);
+        }
+        
+
+        public List<Emlak> GetEmlakListByYoneticiBm(int id)
+        {
+            return _emlakDal.getListEmlakTipsByYontici(id);
         }
 
-        public void TDelete(Emlak t)
-        {
-            _emlakDal.Delete(t);
-        }
 
-        public void TUpdate(Emlak t)
-        {
-            _emlakDal.Update(t);
-        }
+
+        //53.der kalkti
+        //public void EmlakAdd(Emlak emlak)
+        //{
+        //    _emlakDal.Insert(emlak);
+        //}
+
+        //public void EmlakDelete(Emlak emlak)
+        //{
+        //    _emlakDal.Delete(emlak);
+        //}
+
+        //public void EmlakUpdate(Emlak emlak)
+        //{
+        //    _emlakDal.Update(emlak);
+        //}
     }
 }

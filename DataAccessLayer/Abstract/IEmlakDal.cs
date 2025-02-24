@@ -12,6 +12,7 @@ namespace DataAccessLayer.Abstract
 		//List<Emlak> getListEmlak();
         List<Emlak> getListEmlakTips();
         List<Emlak> getListEmlakTips(int id);
+        List<Emlak> getListEmlakTipsByYontici(int id);
         // List<Emlak> getListEmlak();
     }
 }

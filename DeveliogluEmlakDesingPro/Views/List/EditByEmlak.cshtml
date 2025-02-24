@@ -1,0 +1,17 @@
+﻿@model EntityLayer.Concrete.Emlak
+
+@{
+    ViewData["Title"] = "EditEmlak";
+    Layout = "~/Views/Shared/Panel/YonLayout.cshtml";
+}
+
+
+
+    <h1>EditEmlak Sayfasi</h1>
+    @using (Html.BeginForm("EditEmlak", "Emlak", FormMethod.Post))
+    {//59.ders css gelmedi
+        @Html.Label("Emalk Id")
+        @Html.TextBoxFor(x => x.EmlakID)
+    }
+
+

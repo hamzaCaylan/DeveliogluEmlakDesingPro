@@ -22,5 +22,11 @@ namespace BusinesLayer.Concrete
         {
            _yoneticiDal.Insert(yonetici);
         }
+
+        public List<Yonetici> GetList()
+        {
+            return _yoneticiDal.GetListAll();
+
+        }
     }
 }

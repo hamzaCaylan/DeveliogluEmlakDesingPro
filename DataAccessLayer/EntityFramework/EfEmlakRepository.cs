@@ -33,5 +33,15 @@ namespace DataAccessLayer.EntityFramework
 
             }
         }
+
+        public List<Emlak> getListEmlakTipsByYontici(int id)
+        {
+            using (var c = new Context())
+            {
+
+                return c.Emlaks.Include(a => a.BolgeMahalles).Include(a => a.EmlakTips).Include(a => a.EmlakTurs).Include(a => a.Yoneticis).Where(x=>x.YoneticiID==id).ToList();
+
+            }
+        }
     }
 }
